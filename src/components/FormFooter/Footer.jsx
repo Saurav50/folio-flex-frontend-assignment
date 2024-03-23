@@ -38,7 +38,13 @@ const Footer = () => {
                   <a href="#Portfolio">Portfolio</a>
                 </li>
                 <li className="d-inline-block">
-                  <a href="#testimonials">Blog</a>
+                  <a href="#Experience">Experience</a>
+                </li>
+                <li className="d-inline-block">
+                  <a href="#testimonials">Testimonials</a>
+                </li>
+                <li className="d-inline-block">
+                  <a href="#blog">Blog</a>
                 </li>
                 <li className="d-inline-block pr-0">
                   <a href="#Contact">Contact</a>

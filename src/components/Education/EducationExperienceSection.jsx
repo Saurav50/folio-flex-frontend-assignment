@@ -1,6 +1,6 @@
 // EducationSection.js
 import React, { useState, useEffect } from "react";
-import EducationItem from "./EducationItem";
+import EducationExperienceItem from "./EducationExperienceItem";
 
 const EducationSection = () => {
   const [educationData, setEducationData] = useState([]);
@@ -21,7 +21,6 @@ const EducationSection = () => {
           (a, b) => a.sequence - b.sequence
         );
         setEducationData(sortedData);
-        console.log(sortedData);
       })
       .catch((error) => {
         console.error("Error fetching education data:", error);
@@ -32,7 +31,7 @@ const EducationSection = () => {
   return (
     <section
       className="w-100 float-left blog-con padding-top padding-bottom position-relative"
-      id="blog"
+      id="Experience"
     >
       <div className="container">
         <div className="blog-inner-con position-relative">
@@ -49,7 +48,7 @@ const EducationSection = () => {
                   educationData
                     .filter((item) => item.enabled && item.forEducation)
                     .map((item) => (
-                      <EducationItem
+                      <EducationExperienceItem
                         key={item.id}
                         company_name={item.company_name}
                         endDate={item.endDate}
@@ -79,7 +78,7 @@ const EducationSection = () => {
                   educationData
                     .filter((item) => item.enabled && !item.forEducation)
                     .map((item) => (
-                      <EducationItem
+                      <EducationExperienceItem
                         key={item.id}
                         company_name={item.company_name}
                         endDate={item.endDate}

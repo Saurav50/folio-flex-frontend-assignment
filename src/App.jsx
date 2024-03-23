@@ -10,7 +10,7 @@ import FormSection from "./components/FormFooter/FormSection";
 import Footer from "./components/FormFooter/Footer";
 import Modals from "./components/ModalsSection/Modals";
 import ScrollToTopButton from "./components/UI/ScrollToTopButton";
-import EducationSection from "./components/Education/EducationSection";
+import EducationExperienceSection from "./components/Education/EducationExperienceSection";
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
       <SkillSection />
       <PortfolioSection />
       <PortfolioBody />
-      <EducationSection />
+      <EducationExperienceSection />
       <Testimonials />
       <BlogSection />
       <FormSection />

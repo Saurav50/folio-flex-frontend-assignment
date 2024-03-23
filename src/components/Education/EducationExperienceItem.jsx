@@ -1,6 +1,6 @@
 // EducationItem.js
 import React from "react";
-import "./EducationItem.css";
+import "./EducationExperienceItem.css";
 
 const EducationItem = ({
   company_name,

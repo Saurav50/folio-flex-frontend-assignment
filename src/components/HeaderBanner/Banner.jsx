@@ -13,7 +13,6 @@ const Banner = () => {
       .then((response) => response.json())
       .then((data) => {
         setUserData(data.user);
-        console.log(data);
       })
       .catch((error) => console.error("Error fetching data:", error));
   }, []);

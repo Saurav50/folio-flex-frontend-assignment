@@ -1,7 +1,7 @@
 // Footer.js
 import { useEffect, useState } from "react";
 import React from "react";
-import footerLogo from "../assets/image/footer-logo.png";
+import footerLogo from "../../assets/image/footer-logo.png";
 
 const Footer = () => {
   const [userData, setUserData] = useState(null);

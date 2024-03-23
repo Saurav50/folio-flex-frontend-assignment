@@ -1,6 +1,6 @@
 import React from "react";
-import Banner from "./Banner";
-import logoImg from "../assets/image/logo-img.png";
+import Banner from "../HeaderBanner/Banner";
+import logoImg from "../../assets/image/logo-img.png";
 
 const Header = () => {
   return (

@@ -1,0 +1,36 @@
+/* EducationItem.css */
+.education-item {
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  padding: 30px;
+  background-color: #fff;
+  height: 350px;
+  border-radius: 20px;
+}
+
+.education-item-img {
+  margin-bottom: 10px;
+}
+
+.company-name {
+  font-weight: bold;
+}
+
+.end-date {
+  color: #888;
+  font-size: 14px;
+}
+
+.education-item-content h4 {
+  margin-bottom: 10px;
+}
+.location {
+  color: green;
+}
+.education-item-content p {
+  margin-bottom: 5px;
+}
+p {
+  color: #7d7789;
+  font-size: 16px;
+}

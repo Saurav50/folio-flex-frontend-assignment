@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import bannerRightImg from "../assets/image/banner-right-img.png"; // Import the banner right image
-import cupImg from "../assets/image/cup-img.png"; // Import the cup image
-import adminIcon from "../assets/image/admin-icon.png"; // Import the admin icon image
+import bannerRightImg from "../../assets/image/banner-right-img.png"; // Import the banner right image
+import cupImg from "../../assets/image/cup-img.png"; // Import the cup image
+import adminIcon from "../../assets/image/admin-icon.png"; // Import the admin icon image
 
 const Banner = () => {
   const [userData, setUserData] = useState(null);
@@ -13,6 +13,7 @@ const Banner = () => {
       .then((response) => response.json())
       .then((data) => {
         setUserData(data.user);
+        console.log(data);
       })
       .catch((error) => console.error("Error fetching data:", error));
   }, []);

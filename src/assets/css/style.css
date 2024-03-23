@@ -1550,3 +1550,8 @@ span {
   justify-content: center;
   gap: 24px;
 }
+
+/* experience */
+.experience-con {
+  margin-top: 60px;
+}

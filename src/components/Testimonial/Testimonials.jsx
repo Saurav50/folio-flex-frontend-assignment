@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import TestimonialItem from "./TestimonialItem";
 
 // Import images
-import tastimonialsImg from "../assets/image/tastimonials-img.png";
+import tastimonialsImg from "../../assets/image/tastimonials-img.png";
 
 const Testimonials = () => {
   const [testimonials, setTestimonials] = useState([]);

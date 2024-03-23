@@ -1,6 +1,6 @@
 // BlogItem.js
 import React from "react";
-import blog from "../assets/image/blog-img-1.png";
+import blog from "../../assets/image/blog-img-1.png";
 
 const BlogItem = ({ author, date, title, content, modalTarget }) => {
   return (

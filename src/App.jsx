@@ -1,15 +1,16 @@
 import "./App.css";
-import Header from "./components/Header";
-import ServiceSection from "./components/ServiceSection";
-import SkillSection from "./components/SkillSection";
-import PortfolioSection from "./components/PortfolioSection";
-import PortfolioBody from "./components/PortfolioBody";
-import Testimonials from "./components/Testimonials";
-import BlogSection from "./components/BlogSection";
-import FormSection from "./components/FormSection";
-import Footer from "./components/Footer";
-import Modals from "./components/Modals";
-import ScrollToTopButton from "./components/ScrollToTopButton";
+import Header from "./components/HeaderBanner/Header";
+import ServiceSection from "./components/Service/ServiceSection";
+import SkillSection from "./components/Skill/SkillSection";
+import PortfolioSection from "./components/Portfolio/PortfolioSection";
+import PortfolioBody from "./components/Portfolio/PortfolioBody";
+import Testimonials from "./components/Testimonial/Testimonials";
+import BlogSection from "./components/Blog/BlogSection";
+import FormSection from "./components/FormFooter/FormSection";
+import Footer from "./components/FormFooter/Footer";
+import Modals from "./components/ModalsSection/Modals";
+import ScrollToTopButton from "./components/UI/ScrollToTopButton";
+import EducationSection from "./components/Education/EducationSection";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <SkillSection />
       <PortfolioSection />
       <PortfolioBody />
+      <EducationSection />
       <Testimonials />
       <BlogSection />
       <FormSection />

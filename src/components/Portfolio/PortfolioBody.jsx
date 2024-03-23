@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import PortfolioItem from "./PortfolioItem";
 
-// Import images
-import portfolioImg1 from "../assets/image/portfolio-img1.png";
-import portfolioImg2 from "../assets/image/portfolio-img2.png";
-import portfolioImg3 from "../assets/image/portfolio-img3.png";
-import portfolioImg4 from "../assets/image/portfolio-img4.png";
-import portfolioImg5 from "../assets/image/portfolio-img5.png";
+// // Import images
+// import portfolioImg1 from "../..assets/image/portfolio-img1.png";
+// import portfolioImg2 from "../../assets/image/portfolio-img2.png";
+// import portfolioImg3 from "../../assets/image/portfolio-img3.png";
+// import portfolioImg4 from "../../assets/image/portfolio-img4.png";
+// import portfolioImg5 from "../../assets/image/portfolio-img5.png";
 
 const PortfolioBody = () => {
   const [userData, setUserData] = useState(null);

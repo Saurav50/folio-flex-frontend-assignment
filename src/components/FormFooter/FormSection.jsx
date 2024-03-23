@@ -1,7 +1,7 @@
 // FormSection.js
 import React from "react";
-import ContactInfo from "./ContactInfo";
-import ContactForm from "./ContactForm";
+import ContactInfo from "../Contact/ContactInfo";
+import ContactForm from "../Contact/ContactForm";
 
 const FormSection = () => {
   return (

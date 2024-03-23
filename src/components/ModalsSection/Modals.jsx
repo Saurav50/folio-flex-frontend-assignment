@@ -1,16 +1,16 @@
 import { useState, useEffect } from "react";
 import Modal from "./Modal";
-import ServiceModal from "./ServiceModal";
-import portfolio1 from "../assets/image/portfolio-model-img1.jfif";
-import portfolio2 from "../assets/image/portfolio-model-img2.jfif";
-import portfolio3 from "../assets/image/portfolio-model-img3.jfif";
-import portfolio4 from "../assets/image/portfolio-model-img4.jfif";
-import portfolio5 from "../assets/image/portfolio-model-img5.jfif";
+import ServiceModal from "../Service/ServiceModal";
+// import portfolio1 from "../assets/image/portfolio-model-img1.jfif";
+// import portfolio2 from "../assets/image/portfolio-model-img2.jfif";
+// import portfolio3 from "../assets/image/portfolio-model-img3.jfif";
+// import portfolio4 from "../assets/image/portfolio-model-img4.jfif";
+// import portfolio5 from "../assets/image/portfolio-model-img5.jfif";
 // import img1 from "../assets/image/ui-ux-model-img.jpg";
 // import img2 from "../assets/image/web-designer-model-img.jpg";
 // import img3 from "../assets/image/web-development-model-img.jpg";
 // import img4 from "../assets/image/App-development-model-img.jpg";
-import BlogModalParent from "./BlogModalParent";
+import BlogModalParent from "../Blog/BlogModalParent";
 
 const Modals = () => {
   const [userData, setUserData] = useState(null);

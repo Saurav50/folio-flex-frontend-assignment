@@ -1,8 +1,8 @@
 // ContactInfo.js
 import React, { useEffect, useState } from "react";
-import locationIcon from "../assets/image/location-icon.png";
-import messageIcon from "../assets/image/message-icon.png";
-import phoneIcon from "../assets/image/phone-icon.png";
+import locationIcon from "../../assets/image/location-icon.png";
+import messageIcon from "../../assets/image/message-icon.png";
+import phoneIcon from "../../assets/image/phone-icon.png";
 
 const ContactInfo = () => {
   const [userData, setUserData] = useState(null);

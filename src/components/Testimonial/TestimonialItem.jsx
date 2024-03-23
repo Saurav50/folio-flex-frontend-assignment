@@ -1,5 +1,5 @@
 import React from "react";
-import comma from "../assets/image/comma-icon.png";
+import comma from "../../assets/image/comma-icon.png";
 
 const TestimonialItem = ({ active, content, author, position }) => {
   return (

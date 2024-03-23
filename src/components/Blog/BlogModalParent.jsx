@@ -1,8 +1,8 @@
 // Parent component
 import BlogModal from "./BlogModal";
-import bgImg1 from "../assets/image/blog-model-img1.png";
-import bgImg2 from "../assets/image/blog-model-img2.png";
-import bgImg3 from "../assets/image/blog-model-img3.png";
+import bgImg1 from "../../assets/image/blog-model-img1.png";
+import bgImg2 from "../../assets/image/blog-model-img2.png";
+import bgImg3 from "../../assets/image/blog-model-img3.png";
 const BlogModalParent = () => {
   const blogData = [
     {

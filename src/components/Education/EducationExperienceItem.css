@@ -1,15 +1,22 @@
 /* EducationItem.css */
 .education-item {
-  border: 1px solid #ccc;
+  /* border: 1px solid #ccc; */
   margin-bottom: 20px;
   padding: 30px;
-  background-color: #fff;
+  background-color: var(--white-color);
   height: 350px;
   border-radius: 20px;
+  box-shadow: 0px 9px 9px 3px rgba(0, 0, 0, 0.1);
 }
 
 .education-item-img {
   margin-bottom: 10px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.education-item-img img {
+  width: 80px;
 }
 
 .company-name {

@@ -21,14 +21,28 @@ const PortfolioBody = () => {
       })
       .catch((error) => console.error("Error fetching data:", error));
   }, []);
-  const getCategories = (index) => {
-    if (index >= 0 && index < 5) {
-      return "cars";
-    } else if (index >= 5 && index < 10) {
-      return "colors";
-    } else {
-      return "fruits animals"; // Default categories if index is out of range
+
+  const getCategories = (project) => {
+    const techStacks = project.techStack.map((stack) =>
+      stack.toLowerCase().trim()
+    );
+    console.log(techStacks);
+    const categories = [];
+
+    if (techStacks.includes("reactjs")) {
+      categories.push("Reactjs");
     }
+    if (techStacks.includes("nextjs")) {
+      categories.push("Nextjs");
+    }
+    if (techStacks.includes("mern")) {
+      categories.push("Mern");
+    }
+    if (techStacks.includes("css")) {
+      categories.push("Css");
+    }
+
+    return categories.length > 0 ? categories.join(" ") : "Other";
   };
 
   return (
@@ -46,7 +60,9 @@ const PortfolioBody = () => {
                   title={project.title}
                   description={project.description}
                   modalTarget={project._id}
-                  categories={getCategories(index)}
+                  categories={getCategories(project)}
+                  github={project.githuburl}
+                  liveurl={project.liveurl}
                 />
               ))}
         </div>

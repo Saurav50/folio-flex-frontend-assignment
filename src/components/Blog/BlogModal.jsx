@@ -22,7 +22,7 @@ const BlogModal = ({ id, author, date, title, content, imageSrc }) => {
             </button>
           </div>
           <div className="modal-body">
-            <div className="blog-box-item mb-0">
+            <div className="blog-box-modal-item mb-0">
               <div className="blog-img">
                 <figure className="mb-0">
                   <img src={imageSrc} alt="blog-img" className="img-fluid" />
@@ -34,7 +34,7 @@ const BlogModal = ({ id, author, date, title, content, imageSrc }) => {
                   <span className="float-lg-right">{date}</span>
                 </div>
                 <h4>{title}</h4>
-                <div className="footer-social-icon mb-0">
+                <div className="footer-blog-social-icon mb-0">
                   <ul>
                     <li className="d-inline-block">
                       <a href="https://www.behance.net/">

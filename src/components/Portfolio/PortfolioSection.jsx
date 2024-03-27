@@ -22,17 +22,17 @@ const PortfolioSection = () => {
           >
             All
           </button>
-          <button className="btn" onClick={() => filterSelection("cars")}>
-            Products
+          <button className="btn" onClick={() => filterSelection("Mern")}>
+            Mern
           </button>
-          <button className="btn" onClick={() => filterSelection("animals")}>
-            Web App
+          <button className="btn" onClick={() => filterSelection("Reactjs")}>
+            React.Js
           </button>
-          <button className="btn" onClick={() => filterSelection("fruits")}>
-            Interaction
+          <button className="btn" onClick={() => filterSelection("Nextjs")}>
+            Next.js
           </button>
-          <button className="btn" onClick={() => filterSelection("colors")}>
-            Brand Identity
+          <button className="btn" onClick={() => filterSelection("Css")}>
+            Css
           </button>
         </div>
       </div>

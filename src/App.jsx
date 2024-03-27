@@ -11,11 +11,13 @@ import Footer from "./components/FormFooter/Footer";
 import Modals from "./components/ModalsSection/Modals";
 import ScrollToTopButton from "./components/UI/ScrollToTopButton";
 import EducationExperienceSection from "./components/Education/EducationExperienceSection";
+import About from "./components/About/About";
 
 function App() {
   return (
     <>
       <Header />
+      <About />
       <ServiceSection />
       <SkillSection />
       <PortfolioSection />

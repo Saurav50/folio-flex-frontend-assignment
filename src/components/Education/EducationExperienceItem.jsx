@@ -8,6 +8,7 @@ const EducationItem = ({
   jobTitle,
   jobLocation,
   summary,
+  image, // New prop for the image
 }) => {
   // Function to format date into a human-readable format
   const formatDate = (dateString) => {
@@ -19,7 +20,9 @@ const EducationItem = ({
     <div className="col-lg-4">
       <div className="education-item">
         <div className="education-item-img">
-          <span className="company-name">Company: {company_name}</span>
+          {/* Render the image if provided */}
+          {image && <img src={image} alt={company_name} />}
+          <span className="company-name">{company_name}</span>
         </div>
         <div className="education-item-content">
           <h4>{jobTitle}</h4>

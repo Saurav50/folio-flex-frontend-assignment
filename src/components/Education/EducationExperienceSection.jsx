@@ -1,6 +1,7 @@
 // EducationSection.js
 import React, { useState, useEffect } from "react";
 import EducationExperienceItem from "./EducationExperienceItem";
+import image from "../../assets/image/blog-img-1.png";
 
 const EducationSection = () => {
   const [educationData, setEducationData] = useState([]);
@@ -42,7 +43,7 @@ const EducationSection = () => {
           {error ? (
             <p>Error fetching education data. Please try again later.</p>
           ) : (
-            <div className="blog-box wow fadeInUp">
+            <div className="education-box wow fadeInUp">
               <div className="row">
                 {educationData &&
                   educationData
@@ -55,6 +56,7 @@ const EducationSection = () => {
                         jobTitle={item.jobTitle}
                         jobLocation={item.jobLocation}
                         summary={item.summary}
+                        image={image}
                       />
                     ))}
               </div>
@@ -72,7 +74,7 @@ const EducationSection = () => {
           {error ? (
             <p>Error fetching Experience data. Please try again later.</p>
           ) : (
-            <div className="blog-box wow fadeInUp">
+            <div className="education-box wow fadeInUp">
               <div className="row">
                 {educationData &&
                   educationData
@@ -85,6 +87,7 @@ const EducationSection = () => {
                         jobTitle={item.jobTitle}
                         jobLocation={item.jobLocation}
                         summary={item.summary}
+                        // image={image}
                       />
                     ))}
               </div>

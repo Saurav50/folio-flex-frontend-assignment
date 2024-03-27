@@ -13,6 +13,7 @@ const Banner = () => {
       .then((response) => response.json())
       .then((data) => {
         setUserData(data.user);
+        console.log(data.user);
       })
       .catch((error) => console.error("Error fetching data:", error));
   }, []);
@@ -78,29 +79,18 @@ const Banner = () => {
 
         <div className="banner-con text-lg-left text-center">
           <div className="row">
-            <div className="col-lg-7 col-sm-12 d-flex justify-content-center flex-column">
+            <div className="col-lg-7 col-sm-12  d-flex justify-content-center   flex-column">
               <div className="banner-left-con wow slideInLeft">
                 <div className="banner-heading">
                   <h2>Hello, I Am</h2>
-                  <ul className="dynamic-txts">
-                    <li>
-                      <h1>{userData ? userData.about.name : "John Doe"}</h1>
-                    </li>
-                    <li>
-                      <h1>{userData ? userData.about.name : "John Doe"}</h1>
-                    </li>
-                    <li>
-                      <h1>{userData ? userData.about.name : "John Doe"}</h1>
-                    </li>
-                    <li>
-                      <h1>{userData ? userData.about.name : "John Doe"}</h1>
-                    </li>
-                  </ul>
-                  <p>
+
+                  <h1>{userData ? userData.about.name : "John Doe"},</h1>
+
+                  <h4>
                     {userData
-                      ? userData.about.description
+                      ? userData.about.subTitle
                       : "Duis aute irure dolor in reprehenderit in voluptareudolore eu fugiat nulla pariatur."}
-                  </p>
+                  </h4>
                 </div>
                 <div className="banner-btn generic-btn d-inline-block">
                   <a href="#Contact">Hire Me</a>
@@ -117,7 +107,7 @@ const Banner = () => {
               >
                 <figure className="mb-0 ">
                   <img
-                    src={userData ? userData.about.avatar.url : bannerRightImg}
+                    src={bannerRightImg}
                     alt="banner-right-img"
                     id="banner-right-img"
                     className="banner-right-img"

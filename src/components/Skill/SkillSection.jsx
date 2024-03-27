@@ -26,8 +26,22 @@ const SkillSection = () => {
     >
       <div className="container">
         <div className="skill-inner-con position-relative">
-          <div className="row">
-            <div className="col-lg-6 order-lg-0 order-2 skills-flex">
+          <div className="col">
+            <div className="col-lg-12 d-flex align-items-center text-center">
+              {/* <div className=" generic-title wow slideInRight">
+               
+              </div> */}
+              <div className="generic-title col-lg-12 text-center align-items-center">
+                <h6>My Skills</h6>
+                <h2 className="mb-0">
+                  <h2>
+                    Beautiful & <br />
+                    Unique Digital Experiences
+                  </h2>
+                </h2>
+              </div>
+            </div>
+            <div className="col-lg-12 order-lg-0 order-2 skills-flex">
               <div className="skill-left-con text-center wow slideInLeft">
                 <div className="row service-skill-sttaf-con">
                   {userData &&
@@ -36,7 +50,7 @@ const SkillSection = () => {
                       .filter((skill) => skill.enabled)
                       .map((skill) => (
                         <div
-                          className="col-lg-3 col-sm-4 col-5 mb-2 "
+                          className="col-lg-3 col-md-3 col-sm-4 col-6 mb-2 "
                           key={skill.name}
                         >
                           <SkillItem
@@ -48,24 +62,20 @@ const SkillSection = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-6 d-flex align-items-center">
-              <div className="skill-right-con wow slideInRight">
-                <h6>My Skills</h6>
-                <h2>Beautiful & Unique Digital Experiences</h2>
-                <p>
-                  Nostrum exercitationem ullam corporis suscipit laborioa nisi
-                  ut aliquid exrea commodi consequatur magni dolores aos qui
-                  ratione voluptatem nesciunt.
-                </p>
-                <p>
-                  Quia voluptas sit aspernatur aut odit aut fugit, sed ruiano
-                  consequntar magni dolores.
-                </p>
-                <div className="generic-btn download-bnt">
-                  <a href="#" id="downloadImg" onClick={() => downloadImage()}>
-                    Download CV
-                  </a>
-                </div>
+            <div className="cv-download">
+              <p>
+                Nostrum exercitationem ullam corporis suscipit laborioa nisi ut
+                aliquid exrea commodi consequatur magni dolores aos qui ratione
+                voluptatem nesciunt.
+              </p>
+              <p>
+                Quia voluptas sit aspernatur aut odit aut fugit, sed ruiano
+                consequntar magni dolores.
+              </p>
+              <div className="generic-btn download-bnt">
+                <a href="#" id="downloadImg" onClick={() => downloadImage()}>
+                  Download CV
+                </a>
               </div>
             </div>
           </div>

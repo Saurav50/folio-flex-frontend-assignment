@@ -258,9 +258,9 @@ body {
 
 .about-row {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
+  justify-content: space-between;
   flex-wrap: wrap;
-  gap: 50px;
 }
 .contact-info .text {
   color: var(--accent) !important;
@@ -820,6 +820,7 @@ body {
   padding: 20px 1% 20px;
   box-shadow: 0 0 85px 0 #e9eefc;
   border-radius: 20px;
+  margin-bottom: 15px;
 }
 .service-skill-sttaf-con:first-child {
   margin-bottom: 30px;
@@ -836,6 +837,16 @@ span {
 }
 .service-skill-sttaf-con .col-lg-6:first-child .skill-left-item-con {
   margin-top: -27px;
+}
+.cv-download {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.cv-download p {
+  max-width: 70%;
+  text-align: center;
 }
 /***** skill section css****/
 /******blog section****/

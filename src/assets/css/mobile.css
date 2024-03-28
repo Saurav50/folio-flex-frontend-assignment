@@ -1266,4 +1266,7 @@
     transform: rotate(-45deg);
     transform-origin: 0% 0%;
   }
+  .form-main-inner-con:after {
+    display: none;
+  }
 }

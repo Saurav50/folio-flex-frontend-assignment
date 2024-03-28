@@ -1262,4 +1262,8 @@
     max-width: 100%;
     text-align: center;
   }
+  .navbar-toggler span:nth-child(3) {
+    transform: rotate(-45deg);
+    transform-origin: 0% 0%;
+  }
 }
